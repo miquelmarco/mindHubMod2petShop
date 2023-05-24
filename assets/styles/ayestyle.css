@@ -1,0 +1,78 @@
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  
+
+}
+
+header {
+    height: 30vh;
+}
+
+main {
+    min-height: 60vh;
+}
+
+footer {
+    height: 10vh;
+}
+.container1 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+.container4 {
+    background-image: url(../images/banner.jpg);
+    background-size: cover !important;
+
+}
+
+.box1 {
+    width: 50% !important;
+    height: 50% !important;
+    
+
+}
+
+.box2 {
+    width: 50% !important;
+    height: 50% !important;
+
+}
+
+iframe {
+    width: 450px;
+    height: 300px;
+    padding: 20px !important;
+    background-color: rgb(185, 248, 185);
+
+}
+
+#imgperros {
+    width: 40rem;
+}
+
+#texto1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: #29282a;
+    font-weight: bold;
+    text-shadow: 3px 3px 0px#cbc8ce;
+
+}
+
+#texto2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: #29282a;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 #cbc8ce;
+}
+span {
+    font-size: 40px;
+    color: #501b85;
+
+}
