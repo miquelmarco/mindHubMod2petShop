@@ -7,7 +7,6 @@
     padding: 0 !important;
     margin: 0 !important;
     box-sizing: border-box !important;
-    border: solid red 1px;
     /* background-color: rgb(207, 245, 232); */
 }
 
@@ -31,7 +30,7 @@ footer {
     font-weight: bolder !important;
     color: rgb(214, 75, 226);
     box-shadow: rgba(0, 0, 0, 0.582) 0px 10px 20px, rgba(0, 0, 0, 0.575) 0px 6px 6px;
-    background-color: rgb(185, 248, 185);
+
 }
 
 .card img {
@@ -73,26 +72,20 @@ footer {
 
 /* search bar */
 
-#searchTxt{
+#searchTxt {
     padding: 0.7rem !important;
     font-size: medium !important;
     font-weight: 1000 !important;
-    background-color: rgb(185, 248, 185);;
+    background-color: rgb(185, 248, 185);
+    ;
     border-radius: 2rem !important;
     color: rgb(198, 15, 214);
 }
 
-#searchInput{
+#searchInput {
     width: 300px;
     height: 40px;
     border-radius: 2rem;
     background-color: rgb(185, 248, 185);
     border: outset 5px;
-}
-
-@media only screen and (max-width:870px) {
-    #barContainer{
-    display: flex;
-    flex-direction: column;
-    }
 }
