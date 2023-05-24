@@ -1,7 +1,98 @@
 /* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Dosis', sans-serif; */
+/* rgb(218, 255, 142) */
+/* rgb(192, 164, 251) */
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    border: solid red 1px;
+    /* background-color: rgb(207, 245, 232); */
+}
+
+header {
+    height: 30vh;
+}
+
+main {
+    min-height: 60vh;
+}
+
+footer {
+    height: 10vh;
+}
+
+.card {
+    height: 470px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 0.5px 1px black;
+    font-weight: bolder !important;
+    color: rgb(214, 75, 226);
+    box-shadow: rgba(0, 0, 0, 0.582) 0px 10px 20px, rgba(0, 0, 0, 0.575) 0px 6px 6px;
+    background-color: rgb(185, 248, 185);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 1rem;
+    /* border: dotted 1px rgb(192, 164, 251); */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in
+}
+
+#btns {
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.btn {
+    font-size: smaller;
+    font-weight: 1000;
+    text-shadow: 1px 1px black;
+    background-color: rgb(192, 164, 251);
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(159, 226, 226);
+    color: rgb(198, 15, 214);
+}
+
+#cardTitle {
+    font-size: larger;
+    font-weight: 700;
+}
+
+/* search bar */
+
+#searchTxt{
+    padding: 0.7rem !important;
+    font-size: medium !important;
+    font-weight: 1000 !important;
+    background-color: rgb(185, 248, 185);;
+    border-radius: 2rem !important;
+    color: rgb(198, 15, 214);
+}
+
+#searchInput{
+    width: 300px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: rgb(185, 248, 185);
+    border: outset 5px;
+}
+
+@media only screen and (max-width:870px) {
+    #barContainer{
+    display: flex;
+    flex-direction: column;
+    }
 }
