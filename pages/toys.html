@@ -75,24 +75,28 @@
         <div id="barContainer" class="d-flex justify-content-center align-items-center gap-5">
             <p id="searchTxt">Busca el juguete perfecto para tu mascota!</p>
             <form role="search">
-                <input v-model='searchInput' id="searchInput"  class="form-control me-2" type="Búsqueda" placeholder="   Busca tu producto" aria-label="Búsqueda">
+                <input v-model='searchInput' id="searchInput" class="form-control me-2" type="Búsqueda"
+                    placeholder="   Busca tu producto" aria-label="Búsqueda">
             </form>
         </div>
 
         <div id="cardcontainer" class="d-flex justify-content-center gap-3 flex-wrap m-5">
-            <div class="card m-2 p-2" v-for='card of filtrados' style="width: 18rem;">
+            <div class="card m-2 p-2" v-if='filtrados.length != 0' v-for='card of filtrados' style="width: 18rem;">
                 <img :src="card.imagen" class="card-img-top cardImg" :alt="card.producto">
                 <div class="card-body">
                     <h5 id="cardTitle" class="card-title text-center">{{card.producto}}</h5>
-                    <p class="card-text text-center">$ {{card.precio.toLocaleString()}}</p>
                     <div id='btns' class="d-flex flex-column justify-content-center gap-1">
+                        <p class="card-text precio text-center">Precio: $ {{card.precio.toLocaleString()}}</p>
                         <p class="card-text text-center"> Unidades disponibles: {{card.disponibles}}</p>
                         <a href="#" class="btn btn-primary">Detalles</a>
                         <a href="#" class="btn btn-primary">Agregar al Carrito</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div v-if="filtrados.length == 0">
+                <p id="noResultados">No hay resultados!</p>
+            </div>
+
     </main>
     <hr>
     <footer>
