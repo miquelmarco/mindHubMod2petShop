@@ -64,11 +64,30 @@ footer {
 .btn:hover {
     background-color: rgb(159, 226, 226);
     color: rgb(198, 15, 214);
+    text-shadow: none;
 }
 
 #cardTitle {
     font-size: larger;
     font-weight: 700;
+    margin-top: 1.5rem !important;
+}
+
+.card-text{
+    margin-top: 0.5rem !important;
+}
+
+.precio{
+    background-color: rgb(86, 86, 192);
+    border-radius: 1rem;
+}
+
+#noResultados{
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 0.5px 1px black;
+    font-weight: bolder !important;
+    color: rgb(214, 75, 226);
 }
 
 /* search bar */
@@ -88,6 +107,7 @@ footer {
     border-radius: 2rem;
     background-color: rgb(185, 248, 185);
     border: outset 5px;
+    color: rgb(198, 15, 214);
 }
 
 @media only screen and (max-width:870px) {
