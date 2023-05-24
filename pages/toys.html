@@ -20,6 +20,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
   <header>
     <nav class="navbar navbar-expand-lg d-flex justify-content-between" id="navbar">
       <div class="container">
@@ -50,6 +51,100 @@
           </a>
           <i class="bi bi-cart4"></i>
         </div>
+=======
+    <header>
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between"  id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="../assets/images/logo-no-bg.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-12 text-center ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Juguetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./farmacy.html">Farmacia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">Contacto</a>
+                  </li>
+                </ul>
+                <i class="bi bi-cart4"></i>
+              </div>
+            </div>
+          </nav>
+          <!-- carrousel -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://thumbs.dreamstime.com/b/group-pets-23770942.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.flytap.com/-/media/Flytap/new-tap-pages/travelling-with-animals/pets/flying-with-pets-og-image-1200x630.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://princewilliamlivingweb.s3-accelerate.amazonaws.com/2022/04/pets.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+    </header>
+
+    <main id="app">
+        {{filtroSearch}}
+        <div id="barContainer" class="d-flex justify-content-center align-items-center gap-5">
+            <p id="searchTxt">Busca el juguete perfecto para tu mascota!</p>
+            <form role="search">
+                <input v-model='searchInput' id="searchInput" class="form-control me-2" type="Búsqueda"
+                    placeholder="   Busca tu producto" aria-label="Búsqueda">
+            </form>
+        </div>
+
+        <div id="cardcontainer" class="d-flex justify-content-center gap-3 flex-wrap m-5">
+            <div class="card m-2 p-2" v-if='filtrados.length != 0' v-for='card of filtrados' style="width: 18rem;">
+                <img :src="card.imagen" class="card-img-top cardImg" :alt="card.producto">
+                <div class="card-body">
+                    <h5 id="cardTitle" class="card-title text-center">{{card.producto}}</h5>
+                    <div id='btns' class="d-flex flex-column justify-content-center gap-1">
+                        <p class="card-text precio text-center">Precio: $ {{card.precio.toLocaleString()}}</p>
+                        <p class="card-text text-center"> Unidades disponibles: {{card.disponibles}}</p>
+                        <a href="#" class="btn btn-primary">Detalles</a>
+                        <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div v-if="filtrados.length == 0">
+                <p id="noResultados">No hay resultados!</p>
+            </div>
+
+    </main>
+    <hr>
+    <footer>
+      <h4>Contáctanos</h4>|
+      <a href="tel:+1234567890">
+          <p><i class="bi bi-telephone"></i> Teléfono: +1234567890</p>
+      </a> |
+      <a href="mailto:info@puppypet.com">
+          <p><i class="bi bi-envelope"></i> Correo electrónico: info@puppypet.com</p>
+      </a>|
+
+      <div class="social">
+          <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+>>>>>>> c658d2b4e0e2f120be58331eccddaee0eb7d81ea
       </div>
     </nav>
     <!-- carrousel -->
