@@ -8,6 +8,7 @@
     margin: 0 !important;
     box-sizing: border-box !important;
     border: solid red 1px;
+    /* border: solid red 1px; */
     /* background-color: rgb(207, 245, 232); */
 }
 
@@ -39,6 +40,19 @@ footer {
     object-fit: cover;
     border-radius: 1rem;
     /* border: dotted 1px rgb(192, 164, 251); */
+    background-image: url(../images/fondoooo.png) !important;
+    background-size: contain;
+}
+
+.card img {
+    height: 200px !important;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: 1rem !important;
+    /* position: relative;
+    top: 10px;
+    left: 10px; */
 }
 
 .card:hover {
@@ -81,8 +95,18 @@ footer {
     background-color: rgb(86, 86, 192);
     border-radius: 1rem;
 }
+.card-text {
+    margin-top: 0.5rem !important;
+}
 
-#noResultados{
+.precio {
+    background-color: rgb(138, 34, 207);
+    border-radius: 1rem;
+    color: white;
+    font-weight: 900;
+}
+
+#noResultados {
     font-family: 'Dosis', sans-serif;
     font-size: 1.2rem;
     text-shadow: 0.5px 1px black;
@@ -92,16 +116,17 @@ footer {
 
 /* search bar */
 
-#searchTxt{
+#searchTxt {
     padding: 0.7rem !important;
     font-size: medium !important;
     font-weight: 1000 !important;
-    background-color: rgb(185, 248, 185);;
+    background-color: rgb(185, 248, 185);
     border-radius: 2rem !important;
     color: rgb(198, 15, 214);
 }
 
-#searchInput{
+
+#searchInput {
     width: 300px;
     height: 40px;
     border-radius: 2rem;
@@ -110,9 +135,80 @@ footer {
     color: rgb(198, 15, 214);
 }
 
-@media only screen and (max-width:870px) {
-    #barContainer{
+/* edit details */
+
+#detailContainer {
+    background-image: url(../images/pngwing.com\ \(1\).png);
+    background-size: cover;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+}
+
+.txtdetail h5 {
+    margin-top: 3rem !important;
+    font-size: xx-large !important;
+    font-weight: 900;
+    text-shadow: 0.5px 1px black;
+}
+
+.txtdetail {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900;
+    color: rgb(198, 15, 214);
+    text-align: center;
+    width: 30% !important;
+}
+
+.text-success {
+    color: rgb(198, 15, 214) !important;
+}
+
+.descripcionDetail {
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+}
+
+.imgDetail {
+    height: 400px;
+    width: 400px;
+    border-radius: 2rem;
+    object-fit: contain;
+}
+
+.unitDetail{
+    background-color: rgb(176, 54, 201);
+    border-radius: 1rem;
+    color: white !important;
+}
+
+.priceDetail {
+    background-color: rgb(176, 54, 201);
+    border-radius: 1rem;
+    color: white !important;
+}
+
+.carrito {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.detalles {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+.precio {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+}
+
+@media only screen and (max-width:870px) {
+    #barContainer {
+        display: flex;
+        flex-direction: column;
     }
 }
