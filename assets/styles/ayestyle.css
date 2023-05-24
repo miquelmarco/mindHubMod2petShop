@@ -17,11 +17,13 @@ main {
 footer {
     height: 10vh;
 }
+
 .container1 {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
 }
+
 
 
 .container4 {
@@ -33,8 +35,6 @@ footer {
 .box1 {
     width: 50% !important;
     height: 50% !important;
-    
-
 }
 
 .box2 {

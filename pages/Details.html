@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href='../assets/styles/santi.css'>
+    <link rel="stylesheet" href="../assets/styles/santi.css">
     <link rel="shortcut icon" href="../assets/images/logo-ico.ico" type="image/x-icon">
-    <title>PuppyPet - Farmacy</title>
+    <title>PuppyPet - Contacto</title>
 </head>
 
 <body>
@@ -33,10 +33,10 @@
                     <a class="nav-link active" href="./toys.html">Juguetes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Farmacia</a>
+                    <a class="nav-link active" href="./farmacy.html">Farmacia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="./contact.html">Contacto</a>
+                    <a class="nav-link active" href="#">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -48,52 +48,8 @@
               </div>
             </div>
           </nav>
-          <!-- carrousel -->
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://thumbs.dreamstime.com/b/group-pets-23770942.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://www.flytap.com/-/media/Flytap/new-tap-pages/travelling-with-animals/pets/flying-with-pets-og-image-1200x630.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://princewilliamlivingweb.s3-accelerate.amazonaws.com/2022/04/pets.jpeg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div> 
     </header>
-    <main id="app">
-        {{filtroSearch}}
-        <div id="barContainer" class="d-flex justify-content-center align-items-center gap-5">
-            <p id="searchTxt">Podemos ayudarte a encontrar tu producto!!</p>
-            <form role="search">
-                <input v-model='searchInputFarmacy' id="searchInput"  class="form-control me-2" type="Búsqueda" placeholder="   Busca tu producto" aria-label="Búsqueda">
-            </form>
-        </div>
-
-        <div id="cardcontainer" class="d-flex justify-content-center gap-3 flex-wrap m-5">
-            <div class="card m-2 p-2 gap-3" v-for='card of filtrados' style="width: 18rem;">
-                <img :src="card.imagen" class="card-img-top cardImg" :alt="card.producto">
-                <div class="card-body">
-                    <h5 id="cardTitle" class="card-title text-center">{{card.producto}}</h5>
-                    <p class="card-text text-center">$ {{card.precio.toLocaleString()}}</p>
-                    <div id='btns' class="d-flex flex-column justify-content-center gap-1">
-                        <p class="card-text text-center"> Unidades disponibles: {{card.disponibles}}</p>
-                        <a href="#" class="btn btn-primary">Detalles</a>
-                        <a href="#" class="btn btn-primary">Agregar al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main>
     </main>
     <hr>
     <footer>
@@ -114,8 +70,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="../assets/scripts/farmacy.js"></script>
     <script src="../assets/scripts/index.js"></script>
 </body>
 
