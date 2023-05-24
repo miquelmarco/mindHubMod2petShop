@@ -61,10 +61,8 @@ ul {
 
 footer {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
-    padding: 1rem;
     background-color: black;
     color: rgb(210, 209, 209);
     height: 10rem;
@@ -72,6 +70,17 @@ footer {
 footer a{
     text-decoration: none;
     color:rgb(210, 209, 209);
+}
+#footer_logo{
+    width: 100px;
+    height: 100px;
+}
+#footer_left{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 .social {
     display: flex;
@@ -86,4 +95,22 @@ footer a{
 
 .social i:hover {
     color: white;
+}
+#carrito{
+    color: rgb(236, 236, 236);
+    width: 10rem;
+    height: 2rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+}
+#carrito p{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: .9rem;
+}
+a{
+    text-decoration: none;
+    color:white ;
 }
