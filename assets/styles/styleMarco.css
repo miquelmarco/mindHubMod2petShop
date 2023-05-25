@@ -31,8 +31,7 @@ footer {
     font-weight: bolder !important;
     color: rgb(214, 75, 226);
     box-shadow: rgba(0, 0, 0, 0.582) 0px 10px 20px, rgba(0, 0, 0, 0.575) 0px 6px 6px;
-    background-image: url(../images/fondoooo.png) !important;
-    background-size: contain;
+    background-image: url(../images/51305.png);    background-size: cover;
 }
 
 .card img {
@@ -41,9 +40,6 @@ footer {
     object-fit: cover;
     border-radius: 1rem;
     margin: 1rem !important;
-    /* position: relative;
-    top: 10px;
-    left: 10px; */
 }
 
 .card:hover {
@@ -99,11 +95,20 @@ footer {
 
 /* search bar */
 
+#barContainer{
+    background-image: url(../images/51305.png);
+    background-size: cover !important;
+    margin-left: 15rem !important;
+    margin-right: 15rem !important;
+    border-radius: 3rem;
+    border: outset 5px;
+}
+
 #searchTxt {
     padding: 0.7rem !important;
     font-size: medium !important;
     font-weight: 1000 !important;
-    background-color: rgb(185, 248, 185);
+    background-image: url(../images/bokeh-2072271_640.jpg);
     border-radius: 2rem !important;
     color: rgb(198, 15, 214);
 }
@@ -115,23 +120,25 @@ footer {
     background-color: rgb(185, 248, 185);
     border: outset 5px;
     color: rgb(198, 15, 214);
+    background-image: url(../images/bokeh-2072271_640.jpg);
 }
 
 /* edit details */
 
 #detailContainer {
-    background-image: url(../images/pngwing.com\ \(1\).png);
+    background-image: url(../images/bokeh-2072271_640.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
-    margin-left: 10rem !important;
-    margin-right: 10rem !important;
+    margin-left: 20rem !important;
+    margin-right: 20rem !important;
     padding-bottom: 1.5rem !important;
     padding-top: 1.5rem !important;
+    border-radius: 10rem;
 }
 
 .txtdetail h5 {
-    margin-top: 3rem !important;
+    margin-top: 1rem !important;
     font-size: xx-large !important;
     font-weight: 900;
     text-shadow: 0.5px 1px black;
@@ -139,10 +146,12 @@ footer {
 
 .txtdetail {
     font-family: 'Dosis', sans-serif;
-    font-weight: 900;
+    font-weight: 900 !important;
+    font-size: 1rem !important;
     color: rgb(198, 15, 214);
     text-align: center;
     width: 30% !important;
+    text-shadow: 0.5px 1px black;
 }
 
 .text-success {
@@ -159,6 +168,8 @@ footer {
     width: 400px;
     border-radius: 2rem;
     object-fit: contain;
+    padding: 0.5rem !important;
+    background-color: rgb(201, 159, 240);
 }
 
 .unitDetail{
@@ -187,11 +198,6 @@ footer {
     margin-left: 1rem !important;
     margin-right: 1rem !important;
 }
-
-
-
-
-
 
 @media only screen and (max-width:870px) {
     #barContainer {

@@ -26,16 +26,15 @@
 
     <main id="app">
         {{filtroSearch}}
-        <div id="barContainer" class="d-flex justify-content-center align-items-center gap-5">
-            <p id="searchTxt">Busca el juguete perfecto para tu mascota!</p>
+        <div id="barContainer" class="d-flex justify-content-center align-items-center gap-5 mt-3">
+            <p id="searchTxt">Podemos ayudarte a encontrar tu producto!!</p>
             <form role="search">
-                <input v-model='searchInput' id="searchInput" class="form-control me-2" type="Búsqueda"
-                    placeholder="   Busca tu producto" aria-label="Búsqueda">
+                <input v-model='searchInput' id="searchInput"  class="form-control me-2" type="Búsqueda" placeholder="  Escribe para buscar" aria-label="Búsqueda">
             </form>
         </div>
 
         <div id="cardcontainer" class="d-flex justify-content-center gap-3 flex-wrap m-5">
-            <div class="card m-2 p-2" v-if='filtrados.length != 0' v-for='card of filtrados' style="width: 18rem;">
+            <div class="card m-2 p-2 d-flex align-items-center" v-if='filtrados.length != 0' v-for='card of filtrados' style="width: 18rem;">
                 <img :src="card.imagen" class="card-img-top cardImg" :alt="card.producto">
                 <div class="card-body">
                     <h5 id="cardTitle" class="card-title text-center">{{card.producto}}</h5>

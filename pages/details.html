@@ -27,7 +27,7 @@
                 <div class="txtdetail d-flex flex-column gap-2">
                     <h5 class="mb-5">{{card.producto}}</h5>
                     <p class="descripcionDetail text-success m-1 descripcionDetail">{{card.descripcion}}</p>
-                    <p class="descripcionDetail text-success m-1 priceDetail">Precio: $ {{card.precio}}</p>
+                    <p class="descripcionDetail text-success m-1 priceDetail">Precio: $ {{card.precio.toLocaleString()}}</p>
                     <p class="descripcionDetail text-success m-1 unitDetail">Unidades Disponibles: {{card.disponibles}} Ud.</p>
                 </div>
             </div>
